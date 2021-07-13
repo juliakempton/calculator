@@ -1,0 +1,113 @@
+#calculator {
+    margin: auto;
+    height: 400px;
+    width: 25%;
+    transform: translate(0, 30%);
+    position: relative;
+}
+
+#btn-container {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "clear clear clear divide"
+                   "seven eight nine multiply"
+                   "four five six subtract"
+                   "one two three add"
+                   "zero decimal equals equals ";
+}
+
+#screen-container {
+    height: 120px;
+    background-color: gray;
+}
+#current-equation {
+    margin-right: 20px;
+    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+    padding-top: 10px;
+    height: 30px;
+}
+
+#current-answer {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+    height: 40px;
+}
+
+.digit-btn, .operator-btn {
+    font-size: 40px;
+}
+
+#one-btn {
+    grid-area: one;
+}
+
+#two-btn {
+    grid-area: two;
+}
+
+#three-btn {
+    grid-area: three;
+}
+
+#four-btn {
+    grid-area: four;
+}
+
+#five-btn {
+    grid-area: five;
+}
+
+#six-btn {
+    grid-area: six;
+}
+
+#seven-btn {
+    grid-area: seven;
+}
+
+#eight-btn {
+    grid-area: eight;
+}
+
+#nine-btn {
+    grid-area: nine;
+}
+
+#zero-btn {
+    grid-area: zero;
+}
+
+#decimal-btn {
+    grid-area: decimal;
+}
+
+#add-btn {
+    grid-area: add;
+}
+
+#subtract-btn {
+    grid-area: subtract;
+}
+
+#multiply-btn {
+    grid-area: multiply;
+}
+
+#divide-btn {
+    grid-area: divide;
+}
+
+#clear-btn {
+    grid-area: clear;
+}
+
+#equals-btn {
+    grid-area: equals;
+}
