@@ -1,24 +1,32 @@
 #calculator {
     margin: auto;
-    height: 400px;
     width: 25%;
     transform: translate(0, 30%);
     position: relative;
+    border: 10px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 0 13px rgb(220, 222, 223);
+
+}
+button {
+    background-color: white;
 }
 
 #btn-container {
-    height: 100%;
     display: grid;
     grid-template-areas: "clear clear clear divide"
                    "seven eight nine multiply"
                    "four five six subtract"
                    "one two three add"
                    "zero decimal equals equals ";
+    height: 350px;
+    padding-top: 10px;
 }
 
 #screen-container {
     height: 120px;
-    background-color: gray;
+    background-color: rgb(240, 243, 243);
+    border-bottom: 15px double rgba(30, 80, 82, 0.767);
 }
 #current-equation {
     margin-right: 20px;
@@ -28,7 +36,9 @@
     text-align: right;
     padding-top: 10px;
     height: 30px;
+    margin-top: 0px;
 }
+
 
 #current-answer {
     margin-right: 20px;
@@ -40,8 +50,25 @@
     height: 40px;
 }
 
-.digit-btn, .operator-btn {
+.digit-btn, .operator-btn, .clear-btn{
     font-size: 40px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.digit-btn {
+    background-color: rgb(199, 238, 247);
+}
+.digit-btn:hover {
+    background-color: rgb(79, 174, 206);
+}
+.operator-btn, .clear-btn{
+    background-color:rgb(151, 200, 233);
+}
+
+.operator-btn:hover, .clear-btn:hover{
+    background-color:rgb(12, 135, 250);
 }
 
 #one-btn {
